@@ -1,0 +1,29 @@
+// main.less
+@import "variables.less";
+@import "nav.less";
+@import "footer.less";
+@import "box.less";
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.box-container {
+    flex: 1;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0C0C0;
+    .red-box    { .create-box(@color-red, 100); }
+    .blue-box   { .create-box(@color-blue, 200); }
+    .green-box  { .create-box(@color-green, 250); }
+    .purple-box { .create-box(@color-purple, 50); } 
+}
